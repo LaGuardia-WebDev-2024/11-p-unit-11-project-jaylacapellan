@@ -21,23 +21,25 @@ Select ONE Additional
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
+    <button id="mom1-button">moment #1</button>
+    <button id="mom2-button">moment #2</button>
+    <button id="mom3-button">moment #3</button>
     <h1>top 3 moments of my <span>senior year</span></h1>
     <ol>
       <li>
-        <h3 id="mem1">moment #1</h3>
+        <h3 id="mom1">moment #1</h3>
+        <p class="first">over spring break i got to go to the dominican republic with my mom 
+          and brother for the first time in 8 years! i saw so many fawmily members, 
+          and ate delicious food.</p>
+      </li>
+
+      <li>
+        <h3 id="mom2">moment #2</h3>
         <p>More about this memory.</p>
       </li>
 
       <li>
-        <h3 id="mem2">moment #2</h3>
-        <p>More about this memory.</p>
-      </li>
-
-      <li>
-        <h3 id="mem3">moment #3</h3>
+        <h3 id="mom3">moment #3</h3>
         <p>More about this memory</p>
       </li>
     </ol>
@@ -45,20 +47,27 @@ Select ONE Additional
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
 
+      $(".first").hide();
+
       // ======================== Button #1
-      $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+      $("#mom1-button").click(function () {
+        $("#mom1").css("color", "rgb(250, 149, 115)");
+        $(".first").show(2000)
       });
+
+
 
       // ======================== Button #2
-      $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+      $("#mom2-button").click(function () {
+        $("#mom2").css("color", "rgb(129, 214, 240)");
       });
 
+
+
       // ======================== Button #3
-      $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
-        $("#mem3").text("Coding Parties! 🎉");
+      $("#mom3-button").click(function () {
+        $("#mom3").css("color", "rgb(115, 201, 116)");
+        $("#mom3").text("web dev class!!🖥️");
       });
 
 
