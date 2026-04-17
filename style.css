@@ -9,4 +9,11 @@ html {
 /* ======================== CSS Rule #2 */
 h1 {
   font-family: "Poetsen One", sans-serif;
+  color: rgb(34, 72, 133);
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-align: center;
 }
+
+
+
