@@ -21,16 +21,18 @@ Select ONE Additional
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div>
+    <div class="buttons">
     <button id="mom1-button">moment #1</button>
     <button id="mom2-button">moment #2</button>
     <button id="mom3-button">moment #3</button>
     </div>
-    <h1>top 3 moments of my <span>senior year</span></h1>
+
+
+    <h1>top 3 moments of my <span>senior year!</span></h1>
     <ol>
       <li>
         <h3 id="mom1">moment #1</h3>
-        <p class="first">over spring break i got to go to the dominican republic with my mom 
+        <p id="first">over spring break i got to go to the dominican republic with my mom 
           and brother for the first time in 8 years! i saw so many family members, 
           and ate delicious food.</p>
       </li>
@@ -49,12 +51,12 @@ Select ONE Additional
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
 
-      $(".first").hide();
+      $("#first").hide();
 
       // ======================== Button #1
       $("#mom1-button").click(function () {
         $("#mom1").css("color", "rgb(250, 149, 115)");
-        $(".first").show(2000)
+        $("#first").show(2000)
       });
 
 
