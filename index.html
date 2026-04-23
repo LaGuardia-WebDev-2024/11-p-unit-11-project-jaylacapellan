@@ -39,12 +39,12 @@ Select ONE Additional
 
       <li>
         <h3 id="mom2">moment #2</h3>
-        <p>click button at top for more!</p>
+        <p class="mom2info">click button at top for more!</p>
       </li>
 
       <li>
         <h3 id="mom3">moment #3</h3>
-        <p>More about this memory</p>
+        <p class="mom3info">more about the best class ever!</p>
       </li>
     </ol>
 
@@ -64,6 +64,8 @@ Select ONE Additional
       // ======================== Button #2
       $("#mom2-button").click(function () {
         $("#mom2").css("color", "rgb(129, 214, 240)");
+        $(".mom2info").html("Sadly over <i>mid-winter</i> break I still have to dance. However, my friends and I had a sleepover which made it a little better and my mom made us amazing dinner. Then we made slutty brownies and ate it with ice cream and it was delectable!")
+        $("i").css("color", "rgb(129, 214, 240)");
       });
 
 
@@ -72,6 +74,7 @@ Select ONE Additional
       $("#mom3-button").click(function () {
         $("#mom3").css("color", "rgb(115, 201, 116)");
         $("#mom3").text("web dev class!!🖥️");
+        $(".mom3info").text("Web Development is probably one of my favorite classes I have taken in high school. It is the perfect class as a senior and I learned so much valuable information I never would have expected.")
       });
 
 
