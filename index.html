@@ -29,17 +29,29 @@ Select ONE Additional
 
 
     <h1>top 3 moments of my <span>senior year!</span></h1>
+    <p id="random">My pictures from my ipad wouldn't send so enjoy random pictures from the internet!</p>
     <ol>
       <li>
         <h3 id="mom1">moment #1</h3>
         <p id="first">over spring break i got to go to the dominican republic with my mom 
           and brother for the first time in 8 years! i saw so many family members, 
           and ate delicious food.</p>
+        <img class="pic1"
+          src="https://catamaranspuntacana.com/wp-content/uploads/2025/12/Playa-Bachata-beach-1024x575.webp"
+        >
+        <img class="pic1"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz5I7RtrdwGtD2BfhkzCulReH53kptJ6jZ9A&s"
+        >
+        <img class="pic1"
+          src="https://www.hawaiitours.com/wp-content/uploads/2019/01/jetski-jet-ski-adventure-product-image.jpg"
+        >
+
       </li>
 
       <li>
         <h3 id="mom2">moment #2</h3>
         <p class="mom2info">click button at top for more!</p>
+
       </li>
 
       <li>
@@ -52,11 +64,14 @@ Select ONE Additional
     <script>
 
       $("#first").hide();
+      $(".pic1").hide();
 
       // ======================== Button #1
       $("#mom1-button").click(function () {
         $("#mom1").css("color", "rgb(250, 149, 115)");
         $("#first").show(2000);
+        $(".pic1").show(2000);
+
       });
 
 

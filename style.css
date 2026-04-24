@@ -19,4 +19,14 @@ h1 {
   text-align: center;
 }
 
+#random {
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-align: center;
+}
+
+img {
+  border-radius: 10px;
+}
+
 
